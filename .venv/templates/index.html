@@ -1,0 +1,127 @@
+{%extends 'base.html'%}
+{%block title%}Home{%endblock%}
+  {%block content%}
+  
+  <form action="/studentprofile" method="POST">
+    <div class="card offset-2 col-8 mt-5">
+        <div class="card-header">
+          <h3>Student Profile</h3>
+        </div>
+        <div class="card-body">
+          
+            <div class="container">
+                <h5>Personal Details</h5>
+                <div class="row">
+                  <div class="col">
+                    <div class="mb-3 float">
+                        <label for="exampleFormControlInput1" class="form-label float-start">First Name</label>
+                        <input type="text" name="fname" class="form-control" id="exampleFormControlInput1" placeholder="First Name">
+                      </div>
+                  </div>
+                  <div class="col">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label float-start">Middle Name</label>
+                        <input type="text" name="mname" class="form-control" id="exampleFormControlInput1" placeholder="Middle Name">
+                      </div>
+                  </div>
+                  <div class="col">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label float-start">Last Name</label>
+                        <input type="text" name="lname" class="form-control" id="exampleFormControlInput1" placeholder="Last Name">
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label float-start">Suffix</label>
+                        <input type="text" name="suffix" class="form-control" id="exampleFormControlInput1" placeholder="Suffix">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                      <div class="mb-3 float">
+                          <label for="exampleFormControlInput1" class="form-label float-start">Age</label>
+                          <input type="number" name="age" class="form-control" id="exampleFormControlInput1" placeholder="Age">
+                        </div>
+                    </div>
+                    <div class="col">
+                      <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label float-start">Birth Date</label>
+                          <input type="date" name="dob" class="form-control" id="exampleFormControlInput1" placeholder="Birth Date">
+                        </div>
+                    </div>
+                    <div class="col">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label float-start">Gender</label>
+                        <select class="form-select" aria-label="Default select example" name="gender">
+                          <option selected></option>
+                          <option value="Male">Male</option>
+                          <option value="Female">Female</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label float-start">Status</label>
+                        <select class="form-select" aria-label="Default select example" name="status">
+                          <option selected></option>
+                          <option value="Single">Single</option>
+                          <option value="Married">Married</option>
+                          <option value="Widowed">Widowed</option>
+                        </select>
+                      </div>
+                    </div>
+                </div>
+                <h5>Address</h5>
+                <div class="col">
+                  <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label float-start">House No.</label>
+                      <input type="text" name="houseno" class="form-control" id="exampleFormControlInput1" placeholder="House No.">
+                    </div>
+                </div>
+                <div class="row"> 
+                    <div class="col">
+                      <div class="mb-3 float">
+                          <label for="exampleFormControlInput1" class="form-label float-start">Purok</label>
+                          <input type="text" name="purok" class="form-control" id="exampleFormControlInput1" placeholder="Purok">
+                        </div>
+                    </div>
+                    <div class="col">
+                      <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label float-start">Subdivision</label>
+                          <input type="text" name="subdivision" class="form-control" id="exampleFormControlInput1" placeholder="Subdivision">
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label float-start">Barangay</label>
+                          <input type="text" name="barangay" class="form-control" id="exampleFormControlInput1" placeholder="Barangay">
+                      </div>
+                    </div>
+                </div>
+                <div class="row"> 
+                    <div class="col">
+                      <div class="mb-3 float">
+                          <label for="exampleFormControlInput1" class="form-label float-start">Municipality</label>
+                          <input type="text" name="municipality" class="form-control" id="exampleFormControlInput1" placeholder="Municipality">
+                        </div>
+                    </div>
+                    <div class="col">
+                      <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label float-start">Province</label>
+                          <input type="text" name="province" class="form-control" id="exampleFormControlInput1" placeholder="Province">
+                        </div>
+                    </div>
+                    <div class="col">
+                      <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label float-start">Zip Code</label>
+                          <input type="text" name="zip" class="form-control" id="exampleFormControlInput1" placeholder="Zip Code">
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary float-end">Submit</button>
+        </div>
+    </div>
+  </form>
+{%endblock%}
