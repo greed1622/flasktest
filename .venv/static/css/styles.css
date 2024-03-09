@@ -3,6 +3,7 @@
     width: 100%;
     background-color: burlywood;
     float: left;
+    margin-bottom: 30px;
 }
 .header, a{
     text-decoration: none;
