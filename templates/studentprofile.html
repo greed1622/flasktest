@@ -2,19 +2,94 @@
 {%extends 'base.html'%}
 {%block title%}Student Profile{%endblock%}
 {%block content%}
-    <h1>Student Profile Page</h1>
-    <p>First Name: {{fname}}</p>
-    <p>Middle Name: {{mname}}</p>
-    <p>Last Name: {{lname}}</p>
-    <p>Suffix: {{suffix}}</p>
-    <p>Age: {{age}}</p>
-    <p>Birthdate: {{dob}}</p>
-    <p>Gender: {{gender}}</p>
-    <p>Status: {{status}}</p>
-    <p>houseno: {{houseno}}</p>
-    <p>Purok: {{purok}}</p>
-    <p>Barangay: {{barangay}}</p>
-    <p>Municipality: {{municipality}}</p>
-    <p>Province: {{province}}</p>
-    <p>Zip Code: {{zip}}</p>
+<div class="card offset-2 col-8">
+    <div class="card-header">
+        Student Profile Page
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col">
+                <div class="mb-3">
+                    <p>h3First Name: {{fname}}</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                    <p>Middle Name: {{mname}}</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                    <p>Last Name: {{lname}}</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                    <p>Suffix: {{suffix}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="mb-3">
+                    <p>Age: {{age}}</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                    <p>Birthdate: {{dob}}</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                    <p>Gender: {{gender}}</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                    <p>Status: {{status}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="mb-3">
+                    <p>houseno: {{houseno}}</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                    <p>Purok: {{purok}}</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                    <p>Barangay: {{barangay}}</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                    <p>Subdivision: {{subdivision}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="mb-3">
+                    <p>Municipality: {{municipality}}</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                    <p>Province: {{province}}</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                    <p>Zip Code: {{zip}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {%endblock%}
